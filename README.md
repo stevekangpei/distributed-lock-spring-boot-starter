@@ -5,7 +5,7 @@
 
 使用redis 实现了一个分布式锁。
 
-具体实现逻辑：
+## 具体实现逻辑：
     
     > 1，核心的加锁在lock包里面，有lock Executor来实现。
     > 2, LockTemplate 用于对外界提供代理。
@@ -24,4 +24,9 @@
     
 
 
-
+## usage:
+    在application.yml 中配置端口和host即可，目前只实现了单机版本的redis连接。
+    lock:
+      redis:
+        host: 127.0.0.1
+        port: 6379
