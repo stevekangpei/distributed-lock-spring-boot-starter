@@ -1,0 +1,3 @@
+#自定义的starter配置
+org.springframework.boot.autoconfiguration.EnableAutoConfiguration=\
+com.kangpei.lock4j.autoconfigure.LockAutoConfiguration
